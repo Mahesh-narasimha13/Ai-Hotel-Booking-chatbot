@@ -12,11 +12,13 @@ The platform helps users explore beautiful destinations, discover premium stays,
 🎨 Modern and responsive UI
 ⚡ Fast and smooth user experience
 🌐 Easy deployment on GitHub Pages or Render
+
 🛠️ Technologies Used
 HTML5
 CSS3
 JavaScript
 AI/API Integration
+
 📂 Project Structure
 Luxe-India/
 │── index.html
@@ -26,11 +28,13 @@ Luxe-India/
 │── features_bg.png
 │── bing.json
 │── bing_murls.txt
+
 ✨ Highlights
 Luxury-themed hotel booking interface
 AI chatbot for personalized suggestions
 Beautiful travel-inspired design
 Beginner-friendly frontend project
+
 🔮 Future Enhancements
 🏨 Real hotel booking system
 🎤 Voice-enabled AI assistant
