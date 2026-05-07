@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Sandbox Executor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="container">
+        <header>
+            <h1>OS Sandbox <span>Execution Environment</span></h1>
+            <p>Write untrusted Python code. The sandbox will isolate and safely execute it.</p>
+        </header>
+
+        <main class="sandbox-workspace">
+            <!-- Left Side: Code Editor -->
+            <section class="editor-panel glass-panel">
+                <div class="panel-header">
+                    <div class="mac-buttons">
+                        <span class="btn close"></span>
+                        <span class="btn minimize"></span>
+                        <span class="btn expand"></span>
+                    </div>
+                    <h2>main.py</h2>
+                    <button id="run-btn" class="run-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        Run Code
+                    </button>
+                </div>
+                <div class="editor-container">
+                    <textarea id="code-editor" spellcheck="false"># Write your Python code here...
+print("Hello, Sandbox!")
+print("The OS is executing this safely.")
+
+# Test the Sandbox Timeout by uncommenting this infinite loop:
+# while True:
+#     pass
+</textarea>
+                </div>
+            </section>
+
+            <!-- Right Side: Terminal Output -->
+            <section class="terminal-panel glass-panel">
+                <div class="panel-header">
+                    <h2>Terminal Output</h2>
+                    <span id="status-indicator" class="status idle">Idle</span>
+                </div>
+                <div class="terminal-container">
+                    <pre id="output-area">Waiting for execution...</pre>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
